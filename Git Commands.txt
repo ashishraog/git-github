@@ -1,0 +1,26 @@
+#1 Commit id and comment
+$ git log --oneline | tr "\r" " > ~/gitlog.csv" >gitlog.txt
+
+#2 Prints log in format of (hash [abbreviated], author name, author email, subject).
+$ git log --pretty=format:'%h,%an,%ae,%s,' >commit.txt
+
+#3 Complete commit record
+$ git log>commits.txt
+
+#4 In Excel sheet (Format- hash, auth_name, auth_email, subject)
+$ git log --pretty=format:'"%h","%an","%aD","%s",' > log.csv
+
+
+
+
+#Some basic commands
+$ git init
+$ git remote add origin "https://github.com/ashishraog/git-github.git"
+$ git pull origin master   #add project into our directory
+$ git status
+$ git add edu1.txt
+$ git commit -m "adding first commit in local repo"
+$ git add -A
+$ git commit -a -m"Adding 3 files"
+$ git log
+
